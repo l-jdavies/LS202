@@ -1,0 +1,250 @@
+/* 1. Given the code below, what is the minimum width and height (in pixels) that the div needs to entirely contain the img element (including its margins)?*/ 
+
+<div>
+  <img src="#" alt="test" />
+</div>
+
+div {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 4px solid red;
+  box-sizing: content-box;
+  display: inline-block;
+  height: 300px;
+  margin: 20px 19px 10px 11px;
+  padding: 10px 20px;
+  width: 500px;
+}
+
+/* The width needs to be the sum of the following (in px):
+ * 500 (width)
+ * 19 (right margin)
+ * 11 (left margin)
+ * 20 (left padding)
+ * 20 (right padding)
+ * 4 (left border)
+ * 4 (right border)
+ *
+ * plus 2px for the left and right border of div
+ * total = 580
+ *
+ *
+ * The height needs to be the sum of the following (in px):
+ * 300 (height)
+ * 20 (top margin)
+ * 10 (bottom margin)
+ * 10 (top padding)
+ * 10 (bottom padding)
+ * 4 (top border)
+ * 4 (bottom border)
+ *
+ * 2px for top and bottom border of div
+ * total = 360
+ *
+ * Therefore the div element needs a width of 580px and height of 360px.
+ *
+ * 2. Given the code below, what is the minimum width and height (in pixels) that the div needs to entirely contain the section element (including its margins)? How does this differ from the result of the previous practice problem?*/ 
+ 
+ <div>
+  <section>content</section>
+</div>
+
+div {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  border: 4px solid red;
+  box-sizing: content-box;
+  display: block;
+  height: 300px;
+  margin: 20px 19px 10px 11px;
+  padding: 10px 20px;
+  width: 500px;
+}
+
+/* In this example the `section` `display` property is a block. This means the element will occupy the entire row that the element is placed on. As with the `inline-block` element used in the previous example, the size of the `section` element can be calculated manually.
+ *
+ * Width:
+ * 500 (width)
+ * 19 (right margin)
+ * 11 (left margin)
+ * 20 (left padding)
+ * 20 (right padding)
+ * 4 (left border)
+ * 4 (right border)
+ *
+ * plus 2px for border of `div` element
+ * total = 580
+ *
+ * Height:
+ * 300 (height)
+ * 20 (top margin)
+ * 10 (bottom margin)
+ * 10 (top padding)
+ * 10 (bottom padding)
+ * 4 (top border)
+ * 4 (bottom border)
+ *
+ * plus 2px for border of `div` element
+ * total = 360
+ *
+ * The total size of the div element needs to have a height of 360px and width of 580px
+ *
+ *
+ * 3. Given the code below, what is the minimum width and height (in pixels) that the div needs to entirely contain the em element (including its margins)?*/
+
+<div>
+  <em>content</em>
+</div>
+
+div {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  border: 4px solid red;
+  box-sizing: content-box;
+  display: inline;
+  height: 300px;
+  margin: 20px 19px 10px 11px;
+  padding: 10px 20px;
+  width: 500px;
+}
+
+/* The `em` element has an `inline` display property. This means the width and height property values are ignored, the values are calculated based on the size of the content. The top and bottom margins are also ignored. Therefore only the left and right margins; borders; top and bottom padding property values are considered. 
+ *
+ * 4. Given the code below, what is the minimum width and height (in pixels) that the div needs to be to entirely contain the article element (including its margins)?*/
+
+<div>
+  <article>content</article>
+</div>
+
+div {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  border: 4px solid red;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 300px;
+  margin: 20px 19px 10px 11px;
+  padding: 10px 20px;
+  width: 500px;
+}
+
+/* The `article` element has a `border-box` `box-sizing` property. This means the `width` and `height` property values include the borders and padding. Therefore the padding and border values stated here are ignored.
+ *
+ * Width:
+ * 500 (width)
+ * 19 (right margin)
+ * 11 (left margin)
+ * 
+ * 2px div borders
+ * total = 532
+ *
+ * Height:
+ * 300 (height)
+ * 20 (top margin)
+ * 10 (bottom margin)
+ *
+ * 2px div borders
+ * total = 332
+ *
+ * The `div` element needs a `width` property of 532px and height of 332px.
+ *
+ * 5. Given the code below:*/
+
+<div>
+  <tag1>content</tag1><tag2>content</tag2>
+</div>
+
+div {
+  background-color: lightgray;
+  border: 1px solid black;
+  box-sizing: content-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 720px;
+}
+
+tag1, tag2 {
+  box-sizing: border-box;
+  height: 240px;
+  margin: 0;
+  padding: 0;
+  width: 360px;
+}
+
+tag1 {
+  background-color: yellow;
+}
+
+tag2 {
+  background-color: lime;
+}
+/* Which of the following element pairs will display side-by-side in the <div>? Select all that apply:
+
+1. Both elements are block elements.
+2. Both elements are inline elements.
+3. Both elements are inline-block elements.
+4. One element is a block element, and one is an inline element.
+5. One element is a block element, and one is an inline-block element.
+6. One element is an inline element, and one is an inline-block element.
+
+You may assume that any inline element has a content width of no more than 360 pixels. Remember, the width property doesn't affect inline elements, so this "content width" is the actual width of the content area as determined by your browser.
+
+2, 3, 6. Block elements won't display side by side with any other elements but inline and block-inline elements will, providing there is enough space. Given the tag1 and tag2 elements have border-box display properties and a margin property of 0, they would fit within the div element, which has a width of 720px.
+
+6. Will the following code display the two article boxes side-by-side? If not, why not? How would you fix it so that it places the boxes side-by-side?*/
+
+<section>
+  <article>content</article><article>more content</article>
+</section>
+
+section {
+  background-color: yellow;
+  border: 1px solid red;
+  box-sizing: content-box;
+  display: inline-block;
+  height: 400px;
+  margin: 0;
+  padding: 20px;
+  width: 900px;
+}
+
+article {
+  background-color: lime;
+  border: 1px solid blue;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  width: 50%;
+}
+
+/* The default display property for article elements is block, which will not display side by side with anything. This could be fixed by adding `display: inline-block` to the CSS for `article` element To ensure the two article elements would fit next to each other, they also need to be given a `box-sizing` property of `border-box`, so each article element would occupy 50% of the available space.
+
