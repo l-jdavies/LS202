@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Problems:
+  1. Use CSS to set a fixed width on the image of 800 pixels, and center it in the window horizontally.
+  2. Using the code from the previous problem, change the width property for img to 100%, and set the max-width property to 800px. The image should expand to fit any container width up to 800 pixels. Resize your browser width and watch how that affects the photograph.
+  3. Using the code from the previous problem, set a fixed height on the image of 533 pixels. Resize the browser window and watch how the image dimensions change.
+  4. As you can see, having a variable size for one dimension and fixed for the other makes for a container with strange behavior: this one stretches horizontally but remains fixed vertically. Remove the height and update the CSS to ensure the width does not get smaller than 500 pixels.
+   -->
+
+<html lang="en">
+
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <style>
+    img {
+      display: block;
+      min-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <img
+    src="https://d3jtzah944tvom.cloudfront.net/lesson_2/exercises_dimension_and_spacing/H%C3%B4tel_des_Invalides_-_20150801_16h09_%2810630%29.jpg"
+    alt="Demonstration of image sizing" />
+</body>
+
+</html>

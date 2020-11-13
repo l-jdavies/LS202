@@ -1,0 +1,40 @@
+<! DOCTYPE html>
+  <!-- 5. Create a new HTML page with two consecutive div elements. Make each a fixed width and height of 300 pixels. Set the background color on the first div to "#fcc" (red) and the second to "#ccf" (blue).
+  6. Add a 5-pixel solid black border to the blue div. Compare the widths of the two boxes. Why is the blue box a different size?
+  7. Add 20 pixels padding to all four sides of the red div. Notice the different widths again. Add a CSS property to both elements to ensure the total width for each is 300px rather than 300px and then some.
+  8. Change both boxes to place them side-by-side instead of stacked vertically. If necessary, increase the width of your browser window.
+  9. Add 20px of space between the red and blue boxes. -->
+
+  <html lang="en">
+
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .first_div {
+        background-color: #fcc;
+        padding: 20px 20px;
+        margin-right: 10px;
+      }
+
+      .second_div {
+        background-color: #ccf;
+        border: 5px solid black;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="first_div"></div>
+    <div class="second_div"></div>
+  </body>
+
+  </html>
