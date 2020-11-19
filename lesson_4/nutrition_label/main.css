@@ -109,28 +109,23 @@ tfoot td:last-of-type {
   border-top: 1px solid black;
   font-weight: normal;
   text-align: left;
+  font-size: 0.8rem;
 }
 
 table:nth-of-type(2n) thead th {
   font-weight: normal;
+  text-align: left;
   border-bottom: 1px solid black;
+  font-size: 0.8rem;
 }
 
 table:nth-of-type(2n) tbody tr td:nth-of-type(1n) {
   text-align: left;
   border: 0;
-}
-
-table:nth-of-type(2n) tbody tr td:nth-of-type(2n) {
-  text-align: right;
-}
-
-table:nth-of-type(2n) tbody tr td:nth-of-type(3n) {
-  text-align: right;
+  font-size: 0.8rem;
 }
 
 table:nth-of-type(2n) tbody tr td:nth-of-type(4n) {
-  text-align: right;
   font-weight: normal;
 }
 
