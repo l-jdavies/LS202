@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- https://launchschool.com/lessons/d4fbe0e0/assignments/ed23fcf5 -->
+<html lang="en">
+  <head>
+    <title>Form layouts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+  <body>
+    <!--
+      <form action="#" class="styled-form top-to-bottom">
+      <fieldset>
+        <label for="text_field">Input Field</label>
+        <input type="text" name="text_field" id="text_field"
+           placeholder="this is the input area" />
+      </fieldset>
+      </form> -->
+      
+      <!--
+      <form action="#" class="styled-form side-by-side">
+        <fieldset>
+          # note: using dl to store multiple label and input fields so the label and input fields can be displayed side by side easily. This is an alternative to using <div> elements
+          <dl>
+            <dt><label for="text_field">Input Field</label></dt>
+            <dd><input type="text" id="text_field" name="text_field" /></dd>
+
+            <dt><label for="another_field">Another Field</label></dt>
+            <dd><input type="text" id="another_field" name="another_field" /></dd>
+          </dl>
+        </fieldset>
+      </form> -->
+
+      <!-- storing different label/input pairs in separate lists for greater flexibility -->
+      <form action="#" class="styled-form top-to-bottom">
+        <fieldset>
+          <dl>
+            <dt><label for="name">Name</label></dt>
+            <dd><input type="text" id="name" /></dd>
+          </dl>
+
+          <dl class="address">
+            <dt><label for="address1">Address</label></dt>
+            <dd>
+              <input type="text" id="address1" />
+              <input type="text" id="address2" />
+            </dd>
+          </dl>
+
+          <dl class="city partial">
+            <dt><label for="city">City</label></dt>
+            <dd><input type="text" id="city" /></dd>
+          </dl>
+
+          <dl class="state partial">
+            <dt><label for="state">State</label></dt>
+            <dd>
+              <select id="state">
+                <option>AK</option>
+                <option>AL</option>
+              </select>
+            </dd>
+          </dl>
+
+          <dl class="zipcode partial">
+            <dt><label for="zipcode">Zip</label></dt>
+            <dd><input type="text" id="zipcode" /></dd>
+          </dl>
+
+      </fieldset>
+    </form>
+  </body>
+</html>
