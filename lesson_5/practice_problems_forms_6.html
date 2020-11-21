@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Create a review form with a single control that lets the user select from the movies "Looper," "Frozen," and "Tommy Boy," then add a numeric rating field that the user can set to any integer from 1-5. Next, add a toggle control to add the movie to your favorites list. Enable the toggle control by default. Lastly, add a submit button.
+
+  Add the movie "Alien" to the end of the drop-down list and make it the initial selection when displaying the form.
+  
+  Update your solution to show all four possible choices at once.
+-->
+<html lang="en">
+  <head>
+    <title>Review form</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <dl>
+          <dt><label for="movie_selection">Movie</label></dt>
+          <dd>
+          <select name="movie" id="movie_selection" multiple size="4">
+              <option value="looper">Looper</option>
+              <option value="frozen">Frozen</option>
+              <option value="tommy_boy">Tommy Boy</option>
+              <option value="alien" selected>Alien</option>
+            </select>
+          </dd>
+          <dt><label for="rating">Rating</label></dt>
+          <dd>
+            <input type="number" name="rating" id="rating" min="1" max="5">
+          </dd>
+        </dl>
+
+        <label for="add_favourites">Add to my favourites</label>
+        <input type="checkbox" name="add_favourites" id="add_favourites" checked/>
+
+        <div>
+          <input type="submit" value="Rate movie" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

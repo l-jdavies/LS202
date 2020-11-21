@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Create a contact form that collects the user's first name, last name, email address, and phone number. Be sure to require all inputs and to use appropriate input types and labels. Prevent Chrome and iOS Safari from doing any auto-actions (e.g., autocomplete and autocorrect) on the email input. -->
+
+<html lang="en">
+  <head>
+    <title>Contact details</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <fieldset>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" placeholder="Enter first name" required/>
+        
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name" placeholder="Enter last name" required/>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="user@domain.com" autocomplete="off" autocorrect="off" autocapitalize="off" required/>
+        
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="(###) ###-###" required/>
+
+        <input type="submit" value="send" />
+      </fieldset>
+    </form>
+  </body>
+</html>
