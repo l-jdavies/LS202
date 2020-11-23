@@ -8,19 +8,23 @@
   <body>
     <form action="#" method="POST">
       <fieldset>
-        <dl>
+        <dl class="partial half left">
           <dt><label for="first_name">First name</label></dt>
           <dd><input type="text" id="first_name" /></dd>
-
+        </dl><!--
+        --><dl class="partial half right">
           <dt><label for="last_name">Last name</label></dt>
           <dd><input type="text" id="last_name" /></dd>
-          
+        </dl>
+        <dl>
           <dt><label for="email">Email</label></dt>
           <dd><input type="email" id="email" placeholder="user@domain.com"/></dd>
-
+        </dl>
+        <dl class="partial half left">
           <dt><label for="city">City</label></dt>
           <dd><input type="text" id="city" /></dd>
-
+        </dl><!--
+        --><dl class="partial one_tenth both">
           <dt><label for="state">State</label></dt>
           <dd><select name="state" id="state">
                 <option>AK</option>
@@ -75,7 +79,8 @@
                 <option>WV</option>
                 <option>WY</option>
               </select></dd>
-
+        </dl><!--
+        --><dl class="partial four_tenths right">
           <dt><label for="zipcode">Zipcode</label></dt>
           <dd><input type="text" id="zipcode" placeholder="90210" size="5" minlength="5" maxlength="5" pattern="[0-9]{5}"/></dd>
         </dl>
