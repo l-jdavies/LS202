@@ -78,6 +78,74 @@
           <dt><label for="zipcode">Zipcode</label></dt>
           <dd><input type="text" id="zipcode" placeholder="90210" size="5" minlength="5" maxlength="5" pattern="[0-9]{5}"/></dd>
         </dl>
+
+        <h2>Which of these colours do you like best?</h2>
+
+        <ul>        
+          <li>
+            <label>
+              <input type="radio" name="colour" value="red" checked/>
+              Red
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="colour" value="blue" />
+              Blue
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="colour" value="green" />
+              Green
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="colour" value="yellow" />
+              Yellow
+            </label>
+          </li>
+        </ul>
+
+        <h2>Which web technologies do you want to learn?</h2>
+
+        <ul>        
+          <li>
+            <label>
+              <input type="checkbox" name="technology" value="html" />
+              HTML
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="technology" value="css" />
+              CSS
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="technology" value="ruby" />
+              Ruby
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="technology" value="rails" />
+              Rails
+            </label>
+          </li>
+        </ul>
+
+        <label>
+          Comments
+          <textarea name="comments" id="comments" rows="6" cols="80">Enter any comments here.</textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" value="2020-11-23" />
+
+        <input type="submit" value="Send"/>
+        <input type="reset" value="Reset" />
       </fieldset>
     </form>
   </body>
