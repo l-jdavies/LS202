@@ -3,6 +3,7 @@
   <head>
     <title>Contact Form</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <form action="#" method="POST">
@@ -137,10 +138,10 @@
           </li>
         </ul>
 
-        <label>
-          Comments
-          <textarea rows="6" cols="80">Enter any comments here.</textarea>
-        </label>
+        <dl>
+          <dt><label for="comments">Comments</label></dt>
+          <dd><textarea name="comments" id="comments" rows="6" cols="80">Enter any comments here.</textarea></dd>
+        </dl>
 
         <input type="hidden" name="timestamp" value="2020-11-23" />
 
