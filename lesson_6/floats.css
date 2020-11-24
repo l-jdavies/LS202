@@ -1,0 +1,56 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+.parent_container {
+  border: 2px solid grey;
+  width: 1000px;
+  padding-left: 20px;
+}
+
+h1, h2 {
+  color: #ce4a4a;
+  margin: 20px 0;
+}
+
+.dash_border {
+  border: 2px dashed grey;
+  padding: 30px;
+  margin: 40px;
+  width: 650px;
+}
+
+.inline_margin a {
+  margin: 30px;
+}
+
+.inline_padding a {
+  background-color: green;
+  padding: 30px;
+}
+
+.clear_field::before,
+.clear_field::after {
+  content: "";
+  display: block;
+}
+
+.clear_field::after {
+  clear: both;
+}
+
+.float a {
+  float: left;
+  background-color: green;
+  text-align: center;
+  margin: 15px;
+  padding: 25px;
+  width: 120px;
+  text-align: center;
+}
+
+
