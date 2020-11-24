@@ -126,3 +126,76 @@ p {
   width: 50%;
 }
 
+.block .block_1 {
+  background-color: peachpuff;
+  color: papayawhip;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.inline_block .nav a {
+  display: inline-block;
+  margin: 20px 8px 25px;
+  padding: 20px 30px;
+  width: 180px;
+  background-color: azure;
+  color: blueviolet;
+  border: 1px solid plum;
+  text-align: center;
+}
+
+.inline_block::after {
+  border-bottom: 2px dashed black;
+  content: "";
+  display: block;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.pos-float h1 {
+  margin: 30px 0 25px;
+  text-align: center;
+}
+
+.pos-float .floatbox1 {
+  background-color: olive;
+  color: linen;
+  float: left;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 450px;
+}
+
+.pos-float .floatbox2 {
+  background-color: lightgoldenrodyellow;
+  color: deepskyblue;
+  float: left;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 505px;
+}
+
+.pos-float .floatbox3 {
+  clear: both;
+  background-color: cadetblue;
+  color: papayawhip;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 955px;
+}
+
+.positioning ul {
+  margin: 0 0 45px 40px;
+}
+
+.positioning ul li {
+  margin-bottom: 10px;
+}

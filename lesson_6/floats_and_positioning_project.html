@@ -67,6 +67,70 @@
           <div class="float_bx_3">Box - 1 - floated left</div>
           <div class="float_bx_4">Box - 2 - floated right</div>
         </div>
+        <p>When you specify the widths on floated block-level elements, the browser will observe the widths. In the above example, our blocks have widths of 40% and 50%.</p>
+        <h3>Can we change an inline element into a block element?</h3>
+        <p>Let's use the anchor tag as an example.</p>
+        <div class="wrapper">
+          <a href="#" class="block_1">Home</a>
+          <a href="#" class="block_1">About</a>
+          <a href="#" class="block_1">Contact</a>
+        </div>
+        <p>Yes, we can change a block element to inline and vice versa. You can change the <code>display</code> property regardless of the previous value.</p>
+      </section>
+      <section class="inline_block">
+        <h1>Inline-block Elements</h1>
+        <p>Inline-block elements are inline elements that take on most block element properties, such as width and height.</p>
+        <h2>Example</h2>
+        <p>Let's use <code>inine-block</code> to create a navigation bar:</p>
+        <div class="nav">
+          <a href="#">Home</a>
+          <a href="#">Portfolio</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <p>We achieved similar results when we floated the anchor elements. It's as though you get two elements in one: you have the flow properties of inline elements combined with most properties of block elements.</p>
+      </section>
+      <section class="pos-float">
+        <h1>Floats and Positioning Elements</h1>
+        <h2>Floats</h2>
+        <p>The browser removes floated elements from the normal flow. Floated elements automatically become block-level elements with change: two or more floated elements can fit on the same line.</p>
+        <div class="wrapper">
+          <div class="floatbox1">Box-1</div>
+          <div class="floatbox2">Box-2</div>
+          <div class="floatbox3">Box-3</div>
+        </div>
+        <p>Elements that follow a floated element wrap around it. However, we don't want this behaviour above, so we applied <code>clear: both</code> property to the third <code>div</code>.</p> There are two other values for <code>clear, left</code> and <code>right</code>, but typically we want <code>both.</code>
+        <p>There are other ways to clear floats. One technique is the <strong>clearfix</strong> method:</p>
+        <pre>
+          <code>
+            elementName::after {
+              content: "";
+              display: block;
+              clear: both;
+            }
+          </code>
+        </pre>
+        <p>Here we append the <code>::after</code> pseudo-element to the parent element's selector.</p>
+      </section>
+      <section class="positioning">
+        <h1>Positioning</h1>
+        <p>We sometimes want to position elements at specific locations on the page. The normal page flow and floats can't do this with the precision we often want. We can use CSS positioning in this case. There are four positioning types:</p>
+        <ul>
+          <li><em>Static</em></li>
+          <li><em>Fixed</em></li>
+          <li><em>Relative</em></li>
+          <li><em>Absolute</em></li>
+        </ul>
+        <h2>Static Positioning</h2>
+        <p>The element renders at its normal position on the page. That is, the browser uses the standard page flow. All elements default tom static positioning.</p>
+        <h2>Fixed Positioning</h2>
+        <p>Lets you place an element at a fixed position in the browser window; it will remain in place even when you scroll the page. You need the <code>top, bottom, right</code> and <code>left</code> properties to position the element.</p>
+        <p>The browser removes elements with fixed positioning from the page flow. It does not leave a gap in the location where the browser would have positioned it otherwise.</p>
+        <p>The blue box on the bottom-left corner of the page is a fixed position element.</p>
+        <h2>Relative Positioning</h2>
+        <p>Relative positioning positions an element at a location relative to its normal position. Unlike fixed positioning, relative positioning does not remove an element from the page flow; in fact, you can observe a gap in the flow indicating the original position.</p>
+        <h2>Absolute Positioning</h2>
+        <p>Absolute positioning removes an element from the normal page flow and positions it at an absolute position relative to its parent element. If the parent element is the <code><body></code>, the position is absolute relative to the complete page.</p>
       </section>
   </body>
 </html>
