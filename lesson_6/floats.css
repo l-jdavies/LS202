@@ -12,9 +12,14 @@ body {
   padding-left: 20px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #ce4a4a;
   margin: 20px 0;
+}
+
+p {
+  line-height: 35px;
+  margin-bottom: 25px;
 }
 
 .dash_border {
@@ -53,4 +58,71 @@ h1, h2 {
   text-align: center;
 }
 
+.block .wrapper {
+    margin-bottom: 35px;
+}
+
+.block .box-1 {
+  background-color: blueviolet;
+  color: white;
+}
+
+.block .box-2 {
+  background-color: gold;
+  color: blue;
+  height: 60px;
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
+.block .box-3 {
+  background-color: red;
+  color: blueviolet;
+  width: 90px;
+}
+
+.block .box-4 {
+  background-color: lime;
+  color: plum;
+  width: 180px;
+  height: 120px;
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
+.block .float_bx_1 {
+  background-color: blue;
+  color: white;
+  border: 5px solid peachpuff;
+  float: left;
+}
+
+.block .float_bx_2 {
+  background-color: red;
+  color: white;
+  border: 5px solid peachpuff;
+  float: right;
+}
+
+.block .float_bx_3 {
+  background-color: blue;
+  color: white;
+  border: 5px solid peachpuff;
+  float: left;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  width: 40%;
+}
+
+.block .float_bx_4 {
+  background-color: red;
+  color: white;
+  border: 5px solid peachpuff;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  width: 50%;
+}
 

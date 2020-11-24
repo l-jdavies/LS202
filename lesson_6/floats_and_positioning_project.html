@@ -46,9 +46,26 @@
         <h2>Example</h2>
         <p><code>div</code> elements are block-level.</p>
         <div class="wrapper">
-          <div class="box-1">
-            <p>This div has no explicit width or height.</p>
-          </div>
+          <div class="box-1">This <code>div</code> has no explicit width or height.</div>
+          <p>Without an explicit width or height, the box fills the entire width and uses as much height as it needs to fit the content.</p>
+          <div class="box-2">This <code>div</code> has no explict width but a height of 60px; it also has both padding and margins of 20px on all sides.</div>
+          <p>With an explicit height of 60px plus margins and padding, the box still fills the entire width (including the padding and margins), but now requires the requested height.</p>
+          <div class="box-3">This div has a width of 90px and no explicit height.</div>
+          <p>With an explicit width of 90px, the box collapses down to 90px width but expands the height to ensure the text still fits.</p>
+          <div class="box-4">This div has a width of 180px and a height of 120px; it also has both padding and margins of 20px on all sides.</div>
+          <p>With an explicit width of 180px and height of 120px, the box takes on the requested dimensions. However, the content can overflow the box as it does here.</p>
+        </div>
+        <h2>Floating Block Elements</h2>
+        <h3>Floating block elements with no width or height</h3>
+        <div class="wrapper clear_field">
+          <div class="float_bx_1">Box - 1 - floated left</div>
+          <div class="float_bx_2">Box - 2 - floated right</div>
+        </div>
+        <p>Floated block-level elements that don't have a width collapse down to the width required by the content. Thus, multiple floated blocks can fit on the same line as shown above where we float one item left and the other right.</p>
+        <h3>Floating block elements with width and height set.</h3>
+        <div class="wrapper clear_field">
+          <div class="float_bx_3">Box - 1 - floated left</div>
+          <div class="float_bx_4">Box - 2 - floated right</div>
         </div>
       </section>
   </body>
